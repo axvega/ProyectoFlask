@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio - Animales del Mundo{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>¡Bienvenido al Reino Animal!</h1>
+    <p>Embárcate en un viaje para descubrir la vida salvaje.</p>
+    <a href="{{ url_for('animales') }}">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo Animales" class="logo">
+    </a>
+    <p class="cta">Clic en el logotipo para empezar la aventura</p>
+</section>
+{% endblock %}

@@ -1,0 +1,173 @@
+{
+    "animales": [
+      {
+        "nombre": "Tigre de Bengala",
+        "tipo": "Mamífero",
+        "continentes": ["Asia"],
+        "habitats": ["Bosque", "Selva"],
+        "caracteristicas_fisicas": {
+          "peso_promedio_kg": 220,
+          "altura_promedio_m": 1.1
+        },
+        "dieta": {
+          "alimento_principal": "Ciervos",
+          "otros_alimentos": ["Jabalíes", "Búfalos"],
+          "frecuencia_alimentacion": "Cada 2-3 días"
+        },
+        "estado_conservacion": {
+          "en_peligro": true,
+          "nivel_amenaza": "En peligro",
+          "poblacion_estimada": 2500
+        },
+        "vida_promedio_años": 15
+      },
+      {
+        "nombre": "Águila Calva",
+        "tipo": "Ave",
+        "continentes": ["América del Norte"],
+        "habitats": ["Montaña", "Bosque"],
+        "caracteristicas_fisicas": {
+          "peso_promedio_kg": 5.5,
+          "altura_promedio_m": 0.9
+        },
+        "dieta": {
+          "alimento_principal": "Peces",
+          "otros_alimentos": ["Pequeños mamíferos"],
+          "frecuencia_alimentacion": "Diaria"
+        },
+        "estado_conservacion": {
+          "en_peligro": false,
+          "nivel_amenaza": "Preocupación menor",
+          "poblacion_estimada": 70000
+        },
+        "vida_promedio_años": 20
+      },
+      {
+        "nombre": "Cocodrilo del Nilo",
+        "tipo": "Reptil",
+        "continentes": ["África"],
+        "habitats": ["Río", "Pantano"],
+        "caracteristicas_fisicas": {
+          "peso_promedio_kg": 600,
+          "altura_promedio_m": 0.5
+        },
+        "dieta": {
+          "alimento_principal": "Peces",
+          "otros_alimentos": ["Aves", "Mamíferos"],
+          "frecuencia_alimentacion": "Cada 4-5 días"
+        },
+        "estado_conservacion": {
+          "en_peligro": false,
+          "nivel_amenaza": "Preocupación menor",
+          "poblacion_estimada": 50000
+        },
+        "vida_promedio_años": 70
+      },
+      {
+        "nombre": "Elefante Africano",
+        "tipo": "Mamífero",
+        "continentes": ["África"],
+        "habitats": ["Sabana", "Bosque"],
+        "caracteristicas_fisicas": {
+          "peso_promedio_kg": 4500,
+          "altura_promedio_m": 3.5
+        },
+        "dieta": {
+          "alimento_principal": "Hierba",
+          "otros_alimentos": ["Hojas", "Corteza"],
+          "frecuencia_alimentacion": "Diaria"
+        },
+        "estado_conservacion": {
+          "en_peligro": true,
+          "nivel_amenaza": "Vulnerable",
+          "poblacion_estimada": 415000
+        },
+        "vida_promedio_años": 60
+      },
+      {
+        "nombre": "Pingüino Emperador",
+        "tipo": "Ave",
+        "continentes": ["Antártida"],
+        "habitats": ["Hielo", "Océano"],
+        "caracteristicas_fisicas": {
+          "peso_promedio_kg": 35,
+          "altura_promedio_m": 1.2
+        },
+        "dieta": {
+          "alimento_principal": "Peces",
+          "otros_alimentos": ["Krill"],
+          "frecuencia_alimentacion": "Cada 1-2 días"
+        },
+        "estado_conservacion": {
+          "en_peligro": false,
+          "nivel_amenaza": "Preocupación menor",
+          "poblacion_estimada": 600000
+        },
+        "vida_promedio_años": 20
+      },
+      {
+        "nombre": "Serpiente Pitón",
+        "tipo": "Reptil",
+        "continentes": ["África", "Asia", "Australia"],
+        "habitats": ["Bosque", "Selva"],
+        "caracteristicas_fisicas": {
+          "peso_promedio_kg": 75,
+          "altura_promedio_m": 0.2
+        },
+        "dieta": {
+          "alimento_principal": "Roedores",
+          "otros_alimentos": ["Aves", "Pequeños mamíferos"],
+          "frecuencia_alimentacion": "Cada 7-10 días"
+        },
+        "estado_conservacion": {
+          "en_peligro": false,
+          "nivel_amenaza": "Preocupación menor",
+          "poblacion_estimada": 100000
+        },
+        "vida_promedio_años": 25
+      },
+      {
+        "nombre": "Panda Gigante",
+        "tipo": "Mamífero",
+        "continentes": ["Asia"],
+        "habitats": ["Bosque"],
+        "caracteristicas_fisicas": {
+          "peso_promedio_kg": 110,
+          "altura_promedio_m": 0.9
+        },
+        "dieta": {
+          "alimento_principal": "Bambú",
+          "otros_alimentos": [],
+          "frecuencia_alimentacion": "Diaria"
+        },
+        "estado_conservacion": {
+          "en_peligro": true,
+          "nivel_amenaza": "En peligro crítico",
+          "poblacion_estimada": 1800
+        },
+        "vida_promedio_años": 20
+      },
+      {
+        "nombre": "Cóndor Andino",
+        "tipo": "Ave",
+        "continentes": ["América del Sur"],
+        "habitats": ["Montaña"],
+        "caracteristicas_fisicas": {
+          "peso_promedio_kg": 12,
+          "altura_promedio_m": 1.2
+        },
+        "dieta": {
+          "alimento_principal": "Carroña",
+          "otros_alimentos": [],
+          "frecuencia_alimentacion": "Cada 3-4 días"
+        },
+        "estado_conservacion": {
+          "en_peligro": true,
+          "nivel_amenaza": "En peligro",
+          "poblacion_estimada": 6700
+        },
+        "vida_promedio_años": 50
+      }
+    ]
+  }
+  

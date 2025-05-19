@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalles de {{ animal.nombre }}{% endblock %}
+
+{% block content %}
+<section class="detail-section">
+    <h2>{{ animal.nombre }}</h2>
+    <div class="animal-card">
+        <h3>Detalles del Animal</h3>
+        <ul>
+            <li><strong>Tipo:</strong> {{ animal.tipo }}</li>
+            <li><strong>Continentes:</strong> {{ animal.continentes|join(', ') }}</li>
+            <li><strong>Hábitats:</strong> {{ animal.habitats|join(', ') }}</li>
+            <li><strong>Peso promedio:</strong> {{ animal.caracteristicas_fisicas.peso_promedio_kg }} kg</li>
+            <li><strong>Altura promedio:</strong> {{ animal.caracteristicas_fisicas.altura_promedio_m }} m</li>
+            <li><strong>Dieta principal:</strong> {{ animal.dieta.alimento_principal }}</li>
+            <li><strong>Otros alimentos:</strong> {{ animal.dieta.otros_alimentos|join(', ') or 'Ninguno' }}</li>
+            <li><strong>Frecuencia de alimentación:</strong> {{ animal.dieta.frecuencia_alimentacion }}</li>
+            <li><strong>Estado de conservación:</strong> {{ animal.estado_conservacion.nivel_amenaza }} {% if animal.estado_conservacion.en_peligro %}(En peligro){% endif %}</li>
+            <li><strong>Población estimada:</strong> {{ animal.estado_conservacion.poblacion_estimada }}</li>
+            <li><strong>Vida promedio:</strong> {{ animal.vida_promedio_años }} años</li>
+        </ul>
+    </div>
+    <a href="{{ url_for('animales') }}" class="btn btn-back">Volver a la Búsqueda</a>
+</section>
+{% endblock %}

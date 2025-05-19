@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Buscar Animales - Animales del Mundo{% endblock %}
+
+{% block content %}
+<section class="search-section">
+    <h2>Explora la Vida Salvaje</h2>
+    <form action="{{ url_for('animales') }}" method="POST" class="search-form">
+        <div class="form-group">
+            <label for="search">Nombre del animal:</label>
+            <input type="text" id="search" name="search" value="{{ search_query|default('') }}" placeholder="Ej. Tigre">
+        </div>
+        <div class="form-group">
+            <label for="tipo">Tipo de animal:</label>
+            <select id="tipo" name="tipo">
+                <option value="">Todos</option>
+                {% for tipo in tipos %}
+                <option value="{{ tipo }}" {% if tipo == tipo_query %}selected{% endif %}>{{ tipo }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-search">Buscar</button>
+    </form>
+</section>
+
+{% if animales %}
+<section class="results-section">
+    <h3>Animales Encontrados</h3>
+    <div class="animal-table">
+        <div class="table-header">
+            <span>Nombre</span>
+            <span>Tipo</span>
+            <span>Acción</span>
+        </div>
+        {% for animal, index in animales %}
+        <div class="table-row">
+            <span>{{ animal.nombre }}</span>
+            <span>{{ animal.tipo }}</span>
+            <span><a href="{{ url_for('animal_detail', id=index) }}" class="btn btn-detail">Detalle</a></span>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% elif animales is not none %}
+<div class="no-results">
+    <p>¡No se encontraron animales! Prueba con otro nombre o tipo.</p>
+</div>
+{% endif %}
+{% endblock %}
